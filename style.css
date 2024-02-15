@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html{
+    height: 100vh;
+    font-size: 14px;
+}
+
+body{
+    background-color: #030000;
+    height: 100%;
+}
+
+p{
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 28px;
+    font-family: kanit;
+    border-radius: 4px solid;
+    width: 96%;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(79
+    ), blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking{
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.container{
+    height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.degrade{
+    background: linear-gradient(to right, #00ff08, #23fa55);
+}
+
+/* ESTILO DO HEADER */
+
+header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img{
+    max-width: 150px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+header h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #5e5e5e;
+    font-weight: 300;
+}
+
+/* ESTILO DOS BOTÕES */
+
+section.botoes-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a.link button{
+    font-weight: bold;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: black;
+    transition: .2s;
+}
+
+a.link i{
+    font-size: 1.5em;
+}
+
+a.link button:hover, footer a.btn-footer:hover{
+    transform: scale(1.05);
+}
+
+/* ESTILO DO FOOTER */
+
+footer{
+    text-align: center;
+    margin: 30px;
+}
+
+footer a.btn-footer{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+footer :hover{
+    background: #030000;
+    color:  #00ff00;
+}
+
+ footer { animation: bounce 2s infinete; }
+@keyframes bounce {
+    0% {transform: translateY(0); }
+    40% {transform: translatey(-20px); }
+    60% {transform: translate(-10px); }
+}
